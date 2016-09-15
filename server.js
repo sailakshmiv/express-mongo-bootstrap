@@ -18,7 +18,7 @@ app.use(bodyParser());
 // Connect to mongodb
 var connect = function () {
   var options = { server: { socketOptions: { keepAlive: 1 } } }
-  mongoose.connect('mongodb://localhost/etherpad-app', options)
+  mongoose.connect('mongodb://0.0.0.0:27017/etherpad-app', options)
 }
 connect()
 
